@@ -23,5 +23,4 @@ To view simulation results type
 ```
 gtkwave mips.vch
 ```
-
-![gtkwave-screenshot](https://user-images.githubusercontent.com/14940808/28998330-349ad8b8-7a28-11e7-95b1-ee3d9f714dbd.png)
+![gtkwave-screenshot](https://user-images.githubusercontent.com/14940808/28998602-dac7b6aa-7a2f-11e7-8030-fedbdb778776.png)
