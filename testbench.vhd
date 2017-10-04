@@ -2,7 +2,6 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use ieee.std_logic_unsigned.all;
-
 -- use IEEE.std_logic_arith.all;
 use STD.textio.all; 
 
@@ -155,9 +154,7 @@ begin
         --file file_pointer : text;
     begin
         wait for 300 ns;
-        assert true
-            report "simulation ended"
-            severity failure;
+        assert false report "simulation ended" severity failure;
     end process ;
 
 end TB;
