@@ -15,19 +15,18 @@ end entity testbench;
 
 architecture TB of testbench is 
     component mips is
-    generic(nbits : positive :=32);
-    port(inInstruction : in std_logic_vector(nbits -1 downto 0);
+    port(inInstruction : in std_logic_vector(31 downto 0);
          clk        : in std_logic;
          reset      : in std_logic;
          O_Fetch        : out std_logic;
-         O_PCNext       : out std_logic_vector(nbits -1 downto 0);
+         O_PCNext       : out std_logic_vector(31 downto 0);
          
-         outMemAddr      : out std_logic_vector(nbits -1 downto 0);
+         outMemAddr      : out std_logic_vector(31 downto 0);
          outMemRead      : out std_logic;
-         inMemReadData   : in std_logic_vector(nbits -1 downto 0);
+         inMemReadData   : in std_logic_vector(31 downto 0);
          inMemRead       : in std_logic;
          outMemWrite     : out std_logic;
-         outMemWriteData : out std_logic_vector(nbits -1 downto 0)
+         outMemWriteData : out std_logic_vector(31 downto 0)
          
        --  error_control : out std_logic
     );
